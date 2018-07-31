@@ -1,5 +1,4 @@
 """
-Coding challenge for Pragya Systems.
 Author: Ryan Tompkins
 File: A Socrata API client that reports garbage collection rates in NYC.
 
