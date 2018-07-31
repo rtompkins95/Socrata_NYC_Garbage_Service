@@ -87,7 +87,7 @@ def parseArgs():
 
 
 """
-Validate the arguments used the NYPD Tonnage API Endpoint
+Validate the arguments used for the NYPD Tonnage API Endpoint
 
      params: borough - A string representing an NYC borough
              refuse_type - A string in the set: [refuse, paper, mpg] to specify the type of garbage queried
