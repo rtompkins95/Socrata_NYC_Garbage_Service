@@ -55,11 +55,7 @@ def query_api(borough, district):
 """
 Insert a new entry or update a specific entry via dataset
 
-     params: borough - A string representing an NYC borough
-             district - A string representing the borough's district number (under 10 is 0 prefixed like "01")
-             refuse_type - A string in the set: [refuse, paper, mpg] to specify the type of garbage queried
-
-     return: An integer representing the number of tons of refuse_type garbage collected in the borough's district
+     params: entry - a district record with populated attributes
 """
 def upsert(entry):
     table = db['district']
@@ -73,7 +69,7 @@ def upsert(entry):
 """
 Wrapper function to parse command line arguments:
 
-Required Arguments:
+Arguments:
     -t, --type : the type of garbage to be queried (paper, refuse, mgp)
     -b, --borough : one of the five boroughs in New York City
     -d, --district : one of the numbered districts in a borough ranging from [1..18]
