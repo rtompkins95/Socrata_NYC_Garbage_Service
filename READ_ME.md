@@ -1,4 +1,4 @@
-# Ryan Tompkins - PragyaSystems DSNY RESTful API DEMO
+# Ryan Tompkins - Socrata RESTful API Service Demo
 
 ## Introduction
 
