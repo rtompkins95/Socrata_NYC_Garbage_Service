@@ -133,7 +133,7 @@ def validate_args(borough, refuse_type, district):
 """
 Parse and validate the given command line arguments used for the NYPD Tonnage API Endpoint
 
-     return: A tuple (error_code, error_messages) reporting any errors and malformed parameters
+     return: A tuple (borough, refuse_type, district, get_total, error_code, error_messages)
 """
 def parse_and_validate_args():
     args = parseArgs()
