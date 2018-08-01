@@ -46,7 +46,6 @@ def query_api(borough, district):
                          borough=borough,
                          communitydistrict=district)
 
-    # Convert to pandas DataFrame, return 0 if the API returned no entries, otherwise return column entry in tons
     results_df = pd.DataFrame.from_records(results)
 
     return results_df
