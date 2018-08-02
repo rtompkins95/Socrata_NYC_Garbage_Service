@@ -1,6 +1,6 @@
 """
 Author: Ryan Tompkins
-File: A Socrata API client that reports garbage collection rates in NYC.
+File: A RESTful service that uses the Socrata API to report garbage collection rates in NYC.
 
 Open dataset from: https://dev.socrata.com/foundry/data.cityofnewyork.us/8bkb-pvci
 
@@ -182,10 +182,10 @@ def main():
     borough, refuse_type, district, get_total, error_code, error_messages = parse_and_validate_args()
 
     # running client.py -get_total without an entry will crash the program.
-    # initialize the database schema with a dummy entry. (see https://dataset.readthedocs.io/en/latest/index.html
+    # initialize the database schema with a dummy entry. (see https://dataset.readthedocs.io/en/latest/index.html)
     init_db()
 
-    # if the optional argument is provided, skip the API call and report total in local db
+    # if the optional argument is provided, skip the API call and report total of all entries in local db
     if get_total:
         report_total()
         exit(0)
