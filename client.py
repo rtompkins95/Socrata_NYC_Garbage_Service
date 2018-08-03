@@ -161,7 +161,7 @@ def report_total():
     districts = db['district'].all()
 
     for d in districts:
-        sum += round(d['refusetonscollected']) + round(d['papertonscollected']) + round(d['mgptonscollected'])
+        sum += round(d['refusetonscollected'] + d['papertonscollected'] + d['mgptonscollected'])
 
     print('Total garbage (refuse, paper, mgp) collected in all districts queried: ' + str(sum) + ' tons')
 
